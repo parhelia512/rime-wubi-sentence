@@ -66,7 +66,7 @@ def update_missing_encodings(file_path, write_file_path, dict_data):
     write_file(write_file_path, updated_content)
 
 # 载入频率
-freq_file = open(os.path.expanduser("~/vscode/rime-frost/others/知频.txt"), 'r', encoding='utf-8')
+freq_file = open(r"D:\vscode\rime-frost\others\知频.txt", 'r', encoding='utf-8')
 word_freq = {}
 for line in freq_file:
     line = line.strip()
@@ -135,7 +135,7 @@ print(dict_data['𩽾'])
 file_list = ['8105.dict.yaml', '41448.dict.yaml', 'base.dict.yaml', 'ext.dict.yaml', 'others.dict.yaml']
 for file_name in file_list:
     # File paths
-    cn_dicts_path = os.path.expanduser("~/vscode/rime-frost/cn_dicts")
+    cn_dicts_path = r"D:\vscode\rime-frost\cn_dicts"
     yaml_file_path = os.path.join(cn_dicts_path, file_name)
     write_file_path = os.path.join('cn_dicts_yustar', file_name)
 
